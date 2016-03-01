@@ -175,6 +175,7 @@ Next, we wish to interpret this benchmark data. This is done using the [analyze.
 The analysis script will generate a text file of all the latencies of size 1 Mb for a given set of 18 nodes along with a histogram.
 
 Here is our sample text file with 1Mb latencies:
+
 <b>osu_20151019_comet-21-[01-18].txt</b>
 ```
 comet-21-01	comet-21-02	1.13
@@ -187,5 +188,6 @@ comet-21-01	comet-21-08	1.11
 .....
 ```
 Here is our sample histogram with statistics:
+
 <b>osu_20151019_comet-21-[01-18].png</b>
 ![Histogram](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/Fall2011/Histogram/osu_20151019_comet-21-%5B01-18%5D.png)
