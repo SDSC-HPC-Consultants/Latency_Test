@@ -25,6 +25,7 @@ def BatchScript(Rack, Node_List, begin_time='now', Email='sadatnazrul@gmail.com'
     Generates and submits a batch script for running OMB Latency testing
     :param Rack (int): Rack number
     :param Node_List (int list): List of nodes in given rack
+    :param begin_time (str): Time to begin running the job
     :param Email (string): Email address for receiving job updates
     :return: None
     '''
