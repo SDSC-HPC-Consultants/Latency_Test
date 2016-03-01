@@ -20,7 +20,7 @@ def latency_time(filename):
     result=(word_search.group()).split()
     return result
 
-def BatchScript(Rack, Node_List, Email='sadatnazrul@gmail.com'):
+def BatchScript(Rack, Node_List, begin_time='now', Email='sadatnazrul@gmail.com'):
     '''
     Generates and submits a batch script for running OMB Latency testing
     :param Rack (int): Rack number
@@ -46,6 +46,7 @@ def BatchScript(Rack, Node_List, Email='sadatnazrul@gmail.com'):
 #SBATCH --mail-type END
 #SBATCH --mail-user %s
 #SBATCH -A use300
+#SBATCH --begin=%s
 export BINARY=/home/ssnazrul/mpi_test/osu-micro-benchmarks-4.4.1/mpi/pt2pt/osu_latency
         '''%(
             Rack, Node_List[0], Node_List[-1],          #Job Name
@@ -54,6 +55,7 @@ export BINARY=/home/ssnazrul/mpi_test/osu-micro-benchmarks-4.4.1/mpi/pt2pt/osu_l
             len(Node_List),                             #Number of Nodes
             Rack, Node_List[0], Node_List[-1],          #Node list
             Email                                       #Email address for job updates
+            begin_time					#Time to start job
     )
     f.write(description)
     Node_Combinations=combinations(Node_List, 2)
