@@ -129,7 +129,7 @@ BatchScript(21, np.linspace(1,18,18), begin_time='2015-10-19')
 
 This code will submit the generated batch script and produce the output, osu_20151019_comet-21-[01-18].txt .
 
-The contents have the format: <b><i>node1 node2 latency</i></b>
+The contents have the format: <b><i>node1    node2    latency</i></b>
 ```
 comet-21-01	comet-21-02	1.13
 comet-21-01	comet-21-03	1.18
