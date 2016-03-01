@@ -31,27 +31,6 @@ For this test, we will check the latency of every node pair combination of the s
 
 ![Latency Test](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/static/LT.png)
 
-Recommended Setup
------------------
-
-Install MVAPICH Benchmark on your local system by entering the following on your terminal:
-```
-  wget http://mvapich.cse.ohio-state.edu/download/mvapich/osu-micro-benchmarks-4.4.1.tar.gz
-
-  gunzip xvf osu-micro-benchmarks-4.4.1.tar.gz
-
-  tar xvf osu-micro-benchmarks-4.4.1.tar
-
-  cd osu-micro-benchmarks-4.4.1
-
-  ./configure
-
-  make
-```
-
-Batch Scripts
--------------
-
 For running a sample OMB Benchmark Latency Test between nodes comet-10-01 and comet-10-02, 
 use the sample [Slurm](http://slurm.schedmd.com/) batch script:
 
@@ -101,6 +80,24 @@ export BINARY = /<path-to-installation>/mpi/pt2pt/osu_latency
 #Activate Latency file from OMB Benchmark and ibrun for parallel processing
 ibrun -v $BINARY `
 
+```
+
+Recommended Setup
+-----------------
+
+Install MVAPICH Benchmark on your local system by entering the following on your terminal:
+```
+  wget http://mvapich.cse.ohio-state.edu/download/mvapich/osu-micro-benchmarks-4.4.1.tar.gz
+
+  gunzip xvf osu-micro-benchmarks-4.4.1.tar.gz
+
+  tar xvf osu-micro-benchmarks-4.4.1.tar
+
+  cd osu-micro-benchmarks-4.4.1
+
+  ./configure
+
+  make
 ```
 
 Running Tests (Submiting Tests)
