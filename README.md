@@ -165,3 +165,21 @@ comet-21-01,comet-21-03
 .....
 ```
 
+Next, we wish to interpret this benchmark data. This is done using the [analyze.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/analyze.py) script.
+
+The analysis script will generate a text file of all the latencies of size 1 Mb for a given set of 18 nodes along with a histogram.
+
+<b>osu_20151019_comet-21-[01-18].out</b>
+```
+comet-21-01	comet-21-02	1.13
+comet-21-01	comet-21-03	1.18
+comet-21-01	comet-21-04	1.11
+comet-21-01	comet-21-05	1.12
+comet-21-01	comet-21-06	1.15
+comet-21-01	comet-21-07	1.14
+comet-21-01	comet-21-08	1.11
+.....
+```
+
+<b>osu_20151019_comet-21-[01-18].png</b>
+![Histogram](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/Fall2011/Histogram/osu_20151019_comet-21-%5B01-18%5D.png)
