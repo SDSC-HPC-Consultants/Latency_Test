@@ -127,29 +127,40 @@ from Latency_Test_L1 import BatchScript
 BatchScript(21, np.linspace(1,18,18), begin_time='2015-10-19')
 ```
 
-This code will submit the generated batch script and produce the output, osu_20151019_comet-21-[01-18].txt .
-
-The contents have the format: 
-
-<b><i>node1    node2    latency</i></b>
+This code will submit the generated batch script and produce the output, osu_20151019_comet-21-[01-18].out :
 ```
-comet-21-01	comet-21-02	1.13
-comet-21-01	comet-21-03	1.18
-comet-21-01	comet-21-04	1.11
-comet-21-01	comet-21-05	1.12
-comet-21-01	comet-21-06	1.15
-comet-21-01	comet-21-07	1.14
-comet-21-01	comet-21-08	1.11
-comet-21-01	comet-21-09	1.12
-comet-21-01	comet-21-10	1.2
-comet-21-01	comet-21-11	1.17
-comet-21-01	comet-21-12	1.19
-comet-21-01	comet-21-13	1.16
-comet-21-01	comet-21-14	1.15
-comet-21-01	comet-21-15	1.14
-comet-21-01	comet-21-16	1.16
-comet-21-01	comet-21-17	1.21
-comet-21-01	comet-21-18	1.18
+comet-21-01,comet-21-02
+# OSU MPI Latency Test v4.4.1
+# Size          Latency (us)
+0                       1.04
+1                       1.13
+2                       1.13
+4                       1.14
+8                       1.15
+16                      1.16
+32                      1.17
+64                      1.21
+128                     1.30
+256                     1.84
+512                     1.95
+1024                    2.28
+2048                    2.78
+4096                    3.21
+8192                    4.53
+16384                   6.90
+32768                  10.21
+65536                  15.59
+131072                 26.02
+262144                 46.73
+524288                 89.00
+1048576               171.81
+2097152               338.55
+4194304               670.02
+comet-21-01,comet-21-03
+# OSU MPI Latency Test v4.4.1
+# Size          Latency (us)
+0                       1.11
+1                       1.18
 .....
 ```
 
