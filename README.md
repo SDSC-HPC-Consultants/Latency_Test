@@ -106,8 +106,7 @@ ibrun -v $BINARY `
 The entire process of performing OMB Benchmark Latency tests on CPU nodes at L1 switch level is 
 automated by the [Latency_Test_L1.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/Latency_Test_L1.py) script.
 
-Inside the script, we have our Batch_Script() function
-
+Inside the script, we have our BatchScript() function:
 ```
 def BatchScript(Rack, Node_List, begin_time='now', Email='sadatnazrul@gmail.com'):
     '''
@@ -119,3 +118,35 @@ def BatchScript(Rack, Node_List, begin_time='now', Email='sadatnazrul@gmail.com'
     :return: None
     '''
 ```
+
+For example, let us run a test on 19th October, 2015 on Comet, rack 21, nodes 01-18
+
+```
+from Latency_Test_L1 import BatchScript
+
+BatchScript(21, np.linspace(1,18,18), begin_time='2015-10-19')
+```
+
+This code will submit the generated batch script and produce the output, osu_20151019_comet-21-[01-18].txt
+The contents will look as below:
+```
+comet-21-01	comet-21-02	1.13
+comet-21-01	comet-21-03	1.18
+comet-21-01	comet-21-04	1.11
+comet-21-01	comet-21-05	1.12
+comet-21-01	comet-21-06	1.15
+comet-21-01	comet-21-07	1.14
+comet-21-01	comet-21-08	1.11
+comet-21-01	comet-21-09	1.12
+comet-21-01	comet-21-10	1.2
+comet-21-01	comet-21-11	1.17
+comet-21-01	comet-21-12	1.19
+comet-21-01	comet-21-13	1.16
+comet-21-01	comet-21-14	1.15
+comet-21-01	comet-21-15	1.14
+comet-21-01	comet-21-16	1.16
+comet-21-01	comet-21-17	1.21
+comet-21-01	comet-21-18	1.18
+.....
+```
+
