@@ -104,4 +104,4 @@ ibrun -v $BINARY `
 ```
 
 The entire process of performing OMB Benchmark Latency tests on CPU nodes at L1 switch level is 
-automated by the [latency.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/latency.py) script.
+automated by the [Latency_Test_L1.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/Latency_Test_L1.py) script.
