@@ -169,6 +169,11 @@ Running Tests (Analyzing Results)
 
 Next, we wish to interpret this benchmark data. This is done using the [analyze.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/analyze.py) script.
 
+Run the script on our output file in the following way on your Unix terminal:
+```
+python analyze.py osu_20151019_comet-21-[01-18].out
+```
+
 The analysis script will generate a text file of all the latencies of size 1 Mb for a given set of 18 nodes along with a histogram.
 
 Here is our sample text file with 1Mb latencies:
