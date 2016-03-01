@@ -49,7 +49,7 @@ Install MVAPICH Benchmark on your local system by entering the following on your
   make
 ```
 
-Running Tests
+Batch Scripts
 -------------
 
 For running a sample OMB Benchmark Latency Test between nodes comet-10-01 and comet-10-02, 
@@ -102,6 +102,9 @@ export BINARY = /<path-to-installation>/mpi/pt2pt/osu_latency
 ibrun -v $BINARY `
 
 ```
+
+Running Tests (Submiting Tests)
+-------------------------------
 
 The entire process of performing OMB Benchmark Latency tests on CPU nodes at L1 switch level is 
 automated by the [Latency_Test_L1.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/Latency_Test_L1.py) script.
@@ -164,6 +167,8 @@ comet-21-01,comet-21-03
 1                       1.18
 .....
 ```
+Running Tests (Analyzing Results)
+--------------------------------
 
 Next, we wish to interpret this benchmark data. This is done using the [analyze.py](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/analyze.py) script.
 
