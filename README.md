@@ -119,7 +119,7 @@ def BatchScript(Rack, Node_List, begin_time='now', Email='sadatnazrul@gmail.com'
     '''
 ```
 
-For example, let us run a test on 19th October, 2015 on Comet, rack 21, nodes 01-18
+For example, let us run a test on 19th October, 2015 on Comet, rack 21, nodes 01-18:
 
 ```
 from Latency_Test_L1 import BatchScript
@@ -128,6 +128,7 @@ BatchScript(21, np.linspace(1,18,18), begin_time='2015-10-19')
 ```
 
 This code will submit the generated batch script and produce the output, osu_20151019_comet-21-[01-18].out :
+
 ```
 comet-21-01,comet-21-02
 # OSU MPI Latency Test v4.4.1
