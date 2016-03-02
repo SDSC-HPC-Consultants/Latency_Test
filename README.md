@@ -99,6 +99,10 @@ Install MVAPICH Benchmark on your local system by entering the following on your
 
   make
 ```
+You will also need to install Anaconda on your system to run the Python scripts
+```
+bash ~/Downloads/Anaconda3-2.4.0-Linux-x86_64.sh
+```
 
 Running Tests (Submiting Tests)
 -------------------------------
