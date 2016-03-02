@@ -201,3 +201,8 @@ Here is our sample histogram with statistics:
 
 <b>osu_20151019_comet-21-[01-18].png</b>
 ![Histogram](https://github.com/SDSC-HPC-Consultants/Latency_Test/blob/master/static/osu_20151019_comet-21-%5B01-18%5D.png)
+
+Author
+------
+
+Syed Sadat Nazrul
